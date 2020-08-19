@@ -22,7 +22,7 @@ object SparkKafkaStreaming {
 
   val hiveDbTbl = s"$hiveDB.$hiveTbl"
 
-  //push static data into Kafka in a batch
+  //push static data into Kafka in a batch (log info in Kafka)
   def logToKafka(info:String):Unit = {
     println("------------------------START FUNCTION logToKafka--------------------")
 
